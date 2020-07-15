@@ -1,0 +1,5 @@
+__pycache__/
+.idea/
+cookies.txt
+setting.json
+node_modules/
