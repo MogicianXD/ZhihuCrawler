@@ -1,6 +1,9 @@
 ### Updates
 本项目已停止维护。
-目前知乎api的follower和followee接口更新了加密方式，请求无法返回成功结果。
+目前知乎api的follower和followee接口更新了检测方式，请求无法返回成功结果。
+建议的解决方式：请fork后，修改crawl_usr方法的代码，不使用api，而抓取整个页面，再解析DOM树，从元素中抽取数据。（可能更容易被检测到爬虫，需要减小频率）
+
+
 
 
 请在顶层目录新建一个setting.json文件，然后启动zhihu_spider，读取代码在__main__那里
