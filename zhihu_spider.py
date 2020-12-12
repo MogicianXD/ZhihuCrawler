@@ -210,5 +210,6 @@ if __name__ == '__main__':
     # p2 = Process(target=begin_crawl_follow_topic_and_answer, args=(Crawler(captcha_model, account, retries=5), ))
     # p1.start()
     # p2.start()
-    # begin_crawl_usr()
-    begin_crawl_follow_topic_and_answer(Crawler(captcha_model, account, retries=2))
+    crawler = Crawler(captcha_model, account, retries=2)
+    begin_crawl_usr(crawler)
+    begin_crawl_follow_topic_and_answer(crawler)

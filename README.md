@@ -1,4 +1,8 @@
 ### Updates
+本项目已停止维护。
+目前知乎api的follower和followee接口更新了加密方式，请求无法返回成功结果。
+
+
 请在顶层目录新建一个setting.json文件，然后启动zhihu_spider，读取代码在__main__那里
 ```
 {
@@ -53,8 +57,10 @@
 │   ├── orcmodel.py
 │   ├── utils.py
 │   └── zhihu_captcha.py	恢复权重及识别验证码
-├── zhihu_login.py			知乎自动登录
-└── zhihu_spider.py			知乎爬虫，**需要填入自己的账号密码**
+├── setting.json            填入知乎账号密码
+├── zhihu_login.py			知乎自动登录模块
+├── zhihu_spider.py			知乎爬虫，run it！
+└── zhihudata.sql           建库sql
 ```
 
 # 爬虫部分
